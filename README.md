@@ -6,6 +6,6 @@
 
 In the project directory, you can run:
 
-### `php migrate`
+### `php migration.php`
 
 Creates database and runs migration.
