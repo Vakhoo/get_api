@@ -1,3 +1,3 @@
 <?php
     require "../db.php";
-    echo $db->selectData("data");
+    echo ($db->selectData("data"));
