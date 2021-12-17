@@ -8,5 +8,4 @@ In the project directory, you can run:
 
 ### `php migrate`
 
-Creates database and runs migration\
-Run from project directory.
+Creates database and runs migration.
