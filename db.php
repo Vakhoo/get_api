@@ -112,7 +112,7 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT id, firstname, lastname, avatar FROM $table";
+        $sql = "SELECT id, firstname, lastname, avatar, email FROM $table";
         $result = $conn->query($sql);
         $data = [];
         if ($result->num_rows > 0) {
@@ -121,6 +121,7 @@ reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
                 $data[] = [
                     "firstname" => $row["firstname"],
                     "lastname" => $row["lastname"],
+                    "email" => $row["email"],
                     "avatar" => $row["avatar"],
                 ];
             }
