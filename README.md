@@ -9,3 +9,10 @@ In the project directory, you can run:
 ### `php migration.php`
 
 Creates database and runs migration.
+
+In the 'react_display_data' directory you can run:
+
+### `npm install`
+### `npm start`
+
+Runs react project.
